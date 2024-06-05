@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+    /* color: aliceblue; */
+}
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nav-links li {
+    margin: 0px 30px;
+
+}
+/* 
+.active {
+    text-decoration: underline;
+    color: #fc036b;
+    font-weight: bold;
+} */
+
+header {
+    background-image: url("pik/nasim-dadfar-w28Ei0Ap96w-unsplash.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-content {
+    color: rgb(16, 6, 99);
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-content h1 {
+    font-size: 8vmin;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+
+.button {
+
+
+    background-color: white;
+    color: #fc036b;
+    border: 1px solid #fc036b;
+    padding: 4px 12px;
+
+    border-radius: 20px;
+   
+    font-family: 'Roboto', sans-serif;
+
+
+
+   
+}
+
+.menubtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+section {
+
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgba(21, 21, 156, 0.808);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: cyan; */
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.event .row {
+    margin-top: 50px;
+}
+
+
+
+h4 {
+    font-size: 3vmin;
+    color: rgb(5, 48, 48);
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    padding: 0px 60px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.event p {
+    text-align: left;
+
+}
+
+
+.event button {
+    margin-top: 30px;
+}
+
+
+body,
+html {
+
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url("pik/david-kohler-VFRTXGw1VjU-unsplash.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content {
+    width: 60%;
+
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+
+
+
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+
+.explore-content p {
+    color: white;
+    text-align: center;
+}
+
+/* .tours .row .col{
+    width: 50%;
+} */
+
+
+.tours {
+    margin-top: 120px;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.image-col {
+    width: 60%;
+
+}
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+
+.image-gallery img {
+
+    max-height: 300px;
+
+    margin: 10px;
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+    color: rgb(5, 48, 48);
+
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 10px;
+
+
+
+}
+
+/* .content-col .button { */
+/* margin-left: -100px; */
+/* } */
+
+
+
+
+footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0px;
+    background-color: rgb(44, 44, 65);
+    text-align: center;
+
+
+}
+
+footer p {
+    color: white;
+    margin: 10px auto;
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .menubtn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        width: 70px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .nav-links {
+
+        flex-direction: column;
+        width: 100%;
+
+        height: 100vh;
+        justify-content: center;
+
+        background-color: rgb(61, 61, 129);
+
+        /* background-image: url("pik/488401.jpg"); */
+        /* background-size: cover; */
+        /* background-position: center; */
+
+        margin-top: -900px;
+
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 25%;
+    }
+
+    .nav-links li {
+        margin: 25px auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    .explore-content {
+        width: 100%;
+    }
+
+
+    .tours .col {
+        width: 100%;
+
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .image-gallery img {
+        /* width: 60%; */
+        margin: 10px auto;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+}
+
+
+
+/* anmation */
+
+img {
+    transition: transform 0.3s ease;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.button:hover {
+    color: white;
+    background-color: #fc036b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+ 
+}
+
+li:hover{
+    color: #fc036b;
+    cursor: pointer;
+
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Login and Signup button styles */
+.login-signup-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login-signup-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Your existing styles */

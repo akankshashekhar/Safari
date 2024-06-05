@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .slider-container {
+      width: 40%;
+      margin: auto;
+      overflow: hidden;
+      position: sticky;
+      height: 30%;
+      
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      flex: 0 0 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+            <a href="dashboard.html" class="button">Home</a>
+  </header>
+
+  <div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="https://e0.pxfuel.com/wallpapers/163/797/desktop-wallpaper-heaven-on-earth-landscape-valleys-nature-beauty.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="https://static1.thetravelimages.com/wordpress/wp-content/uploads/2023/01/torres-del-paine-national-park-chile.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="https://english.cdn.zeenews.com/sites/default/files/2023/04/24/1188622-torres.jpeg" alt="Image 3">
+          </div>
+    
+    </div>
+  </div>
+
+  <div>
+    <p>Welcome to SAFARI, where we're passionate about revolutionizing the way people explore the world. Our journey began with a vision to empower travelers with personalized recommendations that perfectly align with their preferences and budgets. With a team of experts deeply rooted in the tourism industry, data analytics, and user experience design, we've crafted a platform that combines cutting-edge technology with a user-centric approach.</p>
+    <p>At SAFARI, we believe that every traveler deserves a bespoke experience tailored to their unique tastes and financial considerations. We prioritize understanding our users' preferences, interests, and budget constraints to offer recommendations that go beyond generic suggestions. Through advanced algorithms and machine learning capabilities, we continuously refine our system to deliver the most relevant and enriching travel experiences.</p>
+    <p>Our commitment to excellence drives us to continually innovate and improve our recommendation system. We actively seek feedback from our users and incorporate it into our updates, ensuring that our platform evolves in tandem with their needs and expectations. Additionally, we've fostered partnerships with leading travel agencies, accommodations, and tourism-related businesses to enhance the breadth and depth of our recommendations.</p>
+    <p>Transparency and privacy are at the core of our values. We are dedicated to maintaining the highest standards of data security and privacy protection, adhering to all relevant regulations and best practices. Users can trust that their information is handled responsibly and with the utmost respect for their privacy.</p>
+    <p>We're more than just a recommendation system; we're a community of passionate travelers committed to exploring the world in meaningful ways. Whether you're seeking adventure, relaxation, or cultural immersion, we're here to help you discover your next unforgettable journey. Get in touch with us today to start your personalized travel experience with SAFARI.</p>
+    <p>Contributions </p>
+    <p>Avikshitha Sharma 1RF21IS011</p>
+  </div>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+
+    let counter = 1;
+    const slideWidth = slides[0].clientWidth;
+
+    setInterval(() => {
+      slider.style.transition = 'transform 0.5s ease-in-out';
+      slider.style.transform = `translateX(-${slideWidth * counter}px)`;
+
+      counter++;
+
+      if (counter === slides.length) {
+        setTimeout(() => {
+          slider.style.transition = 'none';
+          slider.style.transform = 'translateX(0)';
+          counter = 1;
+        }, 500);
+      }
+    }, 3000); // Change slide every 3 seconds
+  </script>
+
+</body>
+</html>

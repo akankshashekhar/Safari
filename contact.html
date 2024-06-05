@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="left-container">
+                <div class="left-inner-container">
+                    <h2>Contact Us</h2>
+                    <p>Whether you have a question, want to start a project, or simply want to connect.</p>
+                    <br>
+                    <p>Feel free to send us a message using the form below:</p>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="right-inner-container">
+                    <form method="post" action="contactus.php">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
